@@ -1,6 +1,17 @@
 <resources>
   <string name="app_name">Authenticator</string>
+  <string name="error_title">Error</string>
 
   <!-- Splash Activity -->
   <string name="splash_f">f</string>
+
+  <!-- Login Activity -->
+  <string name="login_email_invalid">Email not valid</string>
+  <string name="login_form_incomplete">Kompletoha pls.</string>
+  <string name="login_invalid_credentials">Mali. lol</string>
+
+    <!-- Main Activity -->
+    <string name="logout">Logout</string>
+    <string name="logout_confirm_message">Are you sure you want to logout?</string>
+    <string name="logout_confirm_title">Logout?</string>
 </resources>

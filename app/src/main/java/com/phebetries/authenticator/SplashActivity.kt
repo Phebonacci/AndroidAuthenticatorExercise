@@ -1,9 +1,9 @@
-package co.blackfintech.authenticator
+package com.phebetries.authenticator
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import co.blackfintech.authenticator.util.SessionStore
+import com.phebetries.authenticator.util.SessionStore
 import org.jetbrains.anko.startActivity
 
 class SplashActivity : AppCompatActivity() {

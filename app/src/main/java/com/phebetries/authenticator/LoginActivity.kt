@@ -1,15 +1,14 @@
-package co.blackfintech.authenticator
+package com.phebetries.authenticator
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
-import co.blackfintech.authenticator.util.SessionStore
+import com.phebetries.authenticator.util.SessionStore
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.okButton
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.startActivity
-import org.jetbrains.anko.yesButton
 
 class LoginActivity : AppCompatActivity() {
 
@@ -31,28 +30,32 @@ class LoginActivity : AppCompatActivity() {
 
     if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
 
-      alert("Email not valid", "Error") {
+      alert(R.string.login_email_invalid, R.string.error_title) {
         okButton { return@okButton }
       }.show()
+
+      return
     }
 
     if (email.isEmpty() || password.isEmpty()) {
 
-      alert("Kompletoha pls.", "Error") {
+      alert(R.string.login_form_incomplete, R.string.error_title) {
         okButton {
           return@okButton
         }
       }.show()
+
+      return
     }
 
-    if (email.equals("johndoe@mail.com") && password.equals("mojako123")) {
+    if (email.equals("frankannstein@mail.com") && password.equals("mojako123")) {
 
       startActivity<MainActivity>()
       val store = SessionStore()
       store.saveEmail(email, this)
       finish()
     } else {
-      alert("Mali. lol", "Error") {
+      alert(R.string.login_invalid_credentials, R.string.error_title) {
         okButton { return@okButton }
       }.show()
     }

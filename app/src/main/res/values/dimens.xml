@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="avatar_size">150dp</item>
+    <item type="dimen" name="vertical_spacing">16dp</item>
+    <item type="dimen" name="horizontal_spacing">16dp</item>
+</resources>

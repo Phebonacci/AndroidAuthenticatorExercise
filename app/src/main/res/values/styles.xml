@@ -8,4 +8,12 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
+  <style name="AppTheme.Login" parent="AppTheme">
+    <item name="colorAccent">@android:color/white</item>
+  </style>
+
+  <style name="AppTheme.Main" parent="AppTheme">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
 </resources>

@@ -5,7 +5,7 @@
  * Copyright (c) 2017 iomusashi. All rights reserved.
  */
 
-package co.blackfintech.authenticator.util
+package com.phebetries.authenticator.util
 
 import android.content.Context
 import android.content.SharedPreferences
